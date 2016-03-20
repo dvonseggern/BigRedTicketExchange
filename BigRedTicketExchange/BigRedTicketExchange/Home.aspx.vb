@@ -8,6 +8,12 @@
         FootballSchedule.DataSource = dbManager.getFootballGames()
         FootballSchedule.DataBind()
 
+        VolleyballSchedule.DataSource = dbManager.getVolleyballGames()
+        VolleyballSchedule.DataBind()
+
+        BasketballSchedule.DataSource = dbManager.getBasketballGames()
+        BasketballSchedule.DataBind()
+
     End Sub
 
 End Class

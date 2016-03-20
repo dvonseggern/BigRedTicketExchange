@@ -11,32 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm1
+Partial Public Class Login
 
     '''<summary>
-    '''FootballSchedule control.
+    '''email control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FootballSchedule As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents email As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BasketballSchedule control.
+    '''password control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BasketballSchedule As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents password As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''VolleyballSchedule control.
+    '''signinButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents VolleyballSchedule As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents signinButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''RegisterButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegisterButton As Global.System.Web.UI.WebControls.Button
 End Class

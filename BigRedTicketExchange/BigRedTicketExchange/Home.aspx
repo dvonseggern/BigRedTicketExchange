@@ -22,14 +22,14 @@
             <asp:Repeater runat="server" ID="FootballSchedule">
               <itemtemplate>
                     <td id="OpponentFootball">
-                       <asp:Label runat="server" ID="Opponent"   text='<%# Eval("Opponent") %>' />
+                       <asp:Label runat="server" ID="Opponent"    text='<%# Eval("Opponent") %>' />
                      </td>
                      <td id="DateFootball">
                       <asp:Label runat="server" ID="GameDate" text='<%# Eval("GameDate") %>' />
  
                       </td>
                       <td id="BuySellFootball">
-                          <asp:button runat="server" ID="buyFootball" Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="buyFootball"  Text="Buy"></asp:button>
                           <asp:button runat="server" ID="sellFootball" Text="Sell"></asp:button>
                       </td>
                  </itemtemplate>
@@ -42,7 +42,7 @@
  
                       </td>
                       <td id="BuySellFootball">
-                          <asp:button runat="server" ID="buyFootball" Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="buyFootball"  Text="Buy"></asp:button>
                           <asp:button runat="server" ID="sellFootball" Text="Sell"></asp:button>
                       </td>
                  </alternatingitemtemplate>
@@ -53,11 +53,67 @@
     <div class="col-sm-4 basketballDiv center-block">
         <a href="#" id="basketballbutton"><img src="/images/BasketballButton.PNG" /></a>
         <div id="bsched" style="display: none;">
+                        <asp:Repeater runat="server" ID="BasketballSchedule">
+              <itemtemplate>
+                    <td id="OpponentBasketball">
+                       <asp:Label runat="server" ID="Opponent"    text='<%# Eval("Opponent") %>' />
+                     </td>
+                     <td id="DateBasketball">
+                      <asp:Label runat="server" ID="GameDate" text='<%# Eval("GameDate") %>' />
+ 
+                      </td>
+                      <td id="BuySellBasketball">
+                          <asp:button runat="server" ID="buyBasketball"  Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="sellBasketball" Text="Sell"></asp:button>
+                      </td>
+                 </itemtemplate>
+                              <alternatingitemtemplate>
+                    <td id="OpponentBasketball">
+                       <asp:Label runat="server" ID="Opponent"    text='<%# Eval("Opponent") %>' />
+                     </td>
+                     <td id="DateBasketball">
+                      <asp:Label runat="server" ID="GameDate" text='<%# Eval("GameDate") %>' />
+ 
+                      </td>
+                      <td id="BuySellBasketball">
+                          <asp:button runat="server" ID="buyBasketball"  Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="sellBasketball" Text="Sell"></asp:button>
+                      </td>
+                 </alternatingitemtemplate>
+            </asp:Repeater>
         </div>
     </div>
     <div class="col-sm-4 volleyballDiv center-block">
         <a href="#" id="volleyballbutton"><img src="/images/VolleyballButton.PNG" /></a>
         <div id="vsched" style="display: none;">
+                                    <asp:Repeater runat="server" ID="VolleyballSchedule">
+              <itemtemplate>
+                    <td id="OpponentVolleyball">
+                       <asp:Label runat="server" ID="Opponent"    text='<%# Eval("Opponent") %>' />
+                     </td>
+                     <td id="DateVolleyball">
+                      <asp:Label runat="server" ID="GameDate" text='<%# Eval("GameDate") %>' />
+ 
+                      </td>
+                      <td id="BuySellVolleyball">
+                          <asp:button runat="server" ID="buyVolleyball"  Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="sellVolleyball" Text="Sell"></asp:button>
+                      </td>
+                 </itemtemplate>
+                              <alternatingitemtemplate>
+                     <td id="OpponentVolleyball">
+                       <asp:Label runat="server" ID="Opponent"    text='<%# Eval("Opponent") %>' />
+                     </td>
+                     <td id="DateVolleyball">
+                      <asp:Label runat="server" ID="GameDate" text='<%# Eval("GameDate") %>' />
+ 
+                      </td>
+                      <td id="BuySellVolleyball">
+                          <asp:button runat="server" ID="buyVolleyball"  Text="Buy"></asp:button>
+                          <asp:button runat="server" ID="sellVolleyball" Text="Sell"></asp:button>
+                      </td>
+                 </alternatingitemtemplate>
+            </asp:Repeater>
         </div>
     </div>
 </div>

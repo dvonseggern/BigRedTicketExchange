@@ -29,21 +29,21 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>Ticket Transfer Instructions</li>
+                    <li><a href="Home.aspx" class="navbar-brand">Ticket Transfer Instructions</a></li>
                     <li>Seller</li>
                     
                 </ul>
 
     <ul class="nav navbar-nav navbar-right">
-        <li>Register</li>
-        <li>Login</li>
+        <li><a href="Register.aspx" class="navbar-brand">Register</a></li>
+        <li><a href="Login.aspx" class="navbar-brand">Login</a></li>
     </ul>
             </div>
         </div>
     </div>
 
     <form id="form1" runat="server">
-    <div>
+    <div style="padding-top:50px;">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
