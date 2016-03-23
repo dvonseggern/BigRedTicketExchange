@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <div class="container">
+
     <h1>Message Center</h1>
 
 			<div class="col-sm-12">
@@ -48,4 +50,6 @@
                     </asp:TableRow>
 				</asp:Table>
 			</div>
+
+        </div>
 </asp:Content>

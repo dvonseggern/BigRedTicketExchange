@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div class="container">
     <h1>Login</h1>
 
 			<div class="form-group col-sm-12">
@@ -25,6 +25,8 @@
             <div class="col-sm-12">
 			<asp:button class="btn btn-default" runat="server" id="RegisterButton" Text="Register"></asp:button>
                 </div>
+
+        </div>
 
 	<script type="text/javascript">
 	var userValid = false;

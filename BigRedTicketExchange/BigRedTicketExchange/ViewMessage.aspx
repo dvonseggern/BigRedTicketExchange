@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div class="container">
     <div class="col-sm-12">
 		<h3>From: John</h3>
         <p>
@@ -18,4 +18,6 @@
         <asp:button class="btn btn-default" runat="server" id="Reply" Text="Reply"></asp:button>
         <asp:button class="btn btn-default" runat="server" id="Delete" Text="Delete"></asp:button>
     </div>
+
+        </div>
 </asp:Content>

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div class="container">
     <h1>Send Message</h1>
     
     <div class="form-group col-sm-12">
@@ -28,5 +28,5 @@
         <asp:button class="btn btn-default" runat="server" id="Send" Text="Send"></asp:button>
         <asp:button class="btn btn-default" runat="server" id="Discard" Text="Discard"></asp:button>
     </div>
-
+</div>
 </asp:Content>
