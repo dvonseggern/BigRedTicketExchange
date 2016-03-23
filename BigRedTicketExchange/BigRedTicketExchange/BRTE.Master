@@ -29,15 +29,16 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a href="Home.aspx" class="navbar-brand">Big Red Ticket Exchange</a></li>
                     <li><a href="Home.aspx" class="navbar-brand">Ticket Transfer Instructions</a></li>
-                    <li>Seller</li>
-                    
+                    <li id="MessageCenterHeader" runat="server"><a href="MessageCenter.aspx" class="navbar-brand">Messages</a></li>                    
                 </ul>
 
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="MessageCenter.aspx" class="navbar-brand">Messages</a></li>
-        <li><a href="Register.aspx" class="navbar-brand">Register</a></li>
-        <li><a href="Login.aspx" class="navbar-brand">Login</a></li>
+        <li id="RegisterHeader" runat="server"><a href="Register.aspx" class="navbar-brand">Register</a></li>
+        <li id="LoginHeader" runat="server"><a href="Login.aspx" class="navbar-brand">Login</a></li>
+        <li id="WelcomeMessageHeader" runat="server"><a href="#" class="navbar-brand">Hi <%# userFirstName %></a></li>
+        <li id="LogoutHeader" runat="server"><a href="Home.aspx" class="navbar-brand" id="LogoutAnchor" runat="server">Logout</a></li>
     </ul>
             </div>
         </div>

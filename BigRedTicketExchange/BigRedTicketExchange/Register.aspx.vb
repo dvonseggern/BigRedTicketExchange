@@ -20,6 +20,8 @@
 
         db.addUser(newUser)
 
+        Session.Add("LoggedInUser", User)
+
         Server.Transfer("Home.aspx")
     End Sub
 End Class
