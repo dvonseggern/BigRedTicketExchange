@@ -16,3 +16,12 @@ C:\Users\Derek\Documents\BigRedTicketExchange\BigRedTicketExchange\BigRedTicketE
 C:\Users\Derek\Documents\BigRedTicketExchange\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.dll
 C:\Users\Derek\Documents\BigRedTicketExchange\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.xml
 C:\Users\Derek\Documents\BigRedTicketExchange\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.pdb
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\bin\BigRedTicketExchange.dll.config
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\bin\BigRedTicketExchange.dll
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\bin\BigRedTicketExchange.pdb
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\bin\BigRedTicketExchange.xml
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.Resources.resources
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.vbproj.GenerateResource.Cache
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.dll
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.xml
+C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.pdb

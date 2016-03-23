@@ -35,6 +35,7 @@
                 </ul>
 
     <ul class="nav navbar-nav navbar-right">
+        <li><a href="MessageCenter.aspx" class="navbar-brand">Messages</a></li>
         <li><a href="Register.aspx" class="navbar-brand">Register</a></li>
         <li><a href="Login.aspx" class="navbar-brand">Login</a></li>
     </ul>
