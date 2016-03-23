@@ -103,7 +103,10 @@
     <Content Include="images\VolleyballButton.PNG" />
     <Content Include="js\jquery-2.2.2.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="MessageCenter.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="SendMessage.aspx" />
+    <Content Include="ViewMessage.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
   </ItemGroup>
@@ -113,12 +116,20 @@
     </Compile>
     <Compile Include="BRTE.Master.vb">
       <DependentUpon>BRTE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MessageCenter.aspx.designer.vb">
+      <DependentUpon>MessageCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageCenter.aspx.vb">
+      <DependentUpon>MessageCenter.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Models.vb" />
@@ -154,6 +165,20 @@
     </Compile>
     <Compile Include="Register.aspx.vb">
       <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SendMessage.aspx.designer.vb">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendMessage.aspx.vb">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ViewMessage.aspx.designer.vb">
+      <DependentUpon>ViewMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMessage.aspx.vb">
+      <DependentUpon>ViewMessage.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
