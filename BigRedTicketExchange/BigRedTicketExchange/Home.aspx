@@ -33,8 +33,8 @@
 
                                 </td>
                                 <td id="BuySellFootball">
-                                    <asp:Button runat="server" ID="buyFootball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellFootball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </ItemTemplate>
                             <AlternatingItemTemplate>
@@ -46,8 +46,8 @@
 
                                 </td>
                                 <td id="BuySellFootball">
-                                    <asp:Button runat="server" ID="buyFootball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellFootball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </AlternatingItemTemplate>
                         </asp:Repeater>
@@ -68,8 +68,8 @@
 
                                 </td>
                                 <td id="BuySellBasketball">
-                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </ItemTemplate>
                             <AlternatingItemTemplate>
@@ -81,8 +81,8 @@
 
                                 </td>
                                 <td id="BuySellBasketball">
-                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </AlternatingItemTemplate>
                         </asp:Repeater>
@@ -102,8 +102,8 @@
 
                                 </td>
                                 <td id="BuySellVolleyball">
-                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </ItemTemplate>
                             <AlternatingItemTemplate>
@@ -115,8 +115,8 @@
 
                                 </td>
                                 <td id="BuySellVolleyball">
-                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy"></asp:Button>
-                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell"></asp:Button>
+                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
+                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
                                 </td>
                             </AlternatingItemTemplate>
                         </asp:Repeater>

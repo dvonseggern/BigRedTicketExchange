@@ -6,7 +6,79 @@ BigRedTicketExchange
 </name>
 </assembly>
 <members>
-<member name="P:BigRedTicketExchange.My.MyWebExtension.Computer">
+<member name="F:BigRedTicketExchange.BuyTickets.sellerNameHeader">
+	<summary>
+sellerNameHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.commentsHeader">
+	<summary>
+commentsHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.MessageHeader">
+	<summary>
+MessageHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.SellerName">
+	<summary>
+SellerName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.SellerNameLabel">
+	<summary>
+SellerNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.Comments">
+	<summary>
+Comments control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.CommentLabel">
+	<summary>
+CommentLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.MessageCell">
+	<summary>
+MessageCell control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.BuyTickets.buyTicket">
+	<summary>
+buyTicket control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:BigRedTicketExchange.My.MyWebExtension.Computer">
 	<summary>
  Returns information about the host computer.
  </summary>
@@ -31,73 +103,17 @@ BigRedTicketExchange
  Module used to define the properties that are available in the My Namespace for Web projects.
  </summary>
 	<remarks></remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.head">
+</member><member name="F:BigRedTicketExchange.ViewMessage.Reply">
 	<summary>
-head control.
+Reply control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.MessageCenterHeader">
+</member><member name="F:BigRedTicketExchange.ViewMessage.Delete">
 	<summary>
-MessageCenterHeader control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.RegisterHeader">
-	<summary>
-RegisterHeader control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.LoginHeader">
-	<summary>
-LoginHeader control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.WelcomeMessageHeader">
-	<summary>
-WelcomeMessageHeader control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.LogoutHeader">
-	<summary>
-LogoutHeader control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.LogoutAnchor">
-	<summary>
-LogoutAnchor control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.BRTE.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
+Delete control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -135,6 +151,142 @@ RegisterButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:BigRedTicketExchange.SendMessage.recipient">
+	<summary>
+recipient control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.SendMessage.subject">
+	<summary>
+subject control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.SendMessage.message">
+	<summary>
+message control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.SendMessage.Send">
+	<summary>
+Send control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.SendMessage.Discard">
+	<summary>
+Discard control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.firstname">
+	<summary>
+firstname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.requiredFirstName">
+	<summary>
+requiredFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.lastname">
+	<summary>
+lastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.requiredLastname">
+	<summary>
+requiredLastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.password">
+	<summary>
+password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.confirmPassword">
+	<summary>
+confirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.email">
+	<summary>
+email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.requiredEmail">
+	<summary>
+requiredEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.nuid">
+	<summary>
+nuid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.requredNUID">
+	<summary>
+requredNUID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.phonenumber">
+	<summary>
+phonenumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:BigRedTicketExchange.Register.registerButton">
+	<summary>
+registerButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:BigRedTicketExchange.WebForm1.FootballSchedule">
 	<summary>
 FootballSchedule control.
@@ -154,22 +306,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:BigRedTicketExchange.WebForm1.VolleyballSchedule">
 	<summary>
 VolleyballSchedule control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.ViewMessage.Reply">
-	<summary>
-Reply control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.ViewMessage.Delete">
-	<summary>
-Delete control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -279,137 +415,73 @@ Button9 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.firstname">
+</member><member name="F:BigRedTicketExchange.BRTE.head">
 	<summary>
-firstname control.
+head control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.requiredFirstName">
+</member><member name="F:BigRedTicketExchange.BRTE.MessageCenterHeader">
 	<summary>
-requiredFirstName control.
+MessageCenterHeader control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.lastname">
+</member><member name="F:BigRedTicketExchange.BRTE.RegisterHeader">
 	<summary>
-lastname control.
+RegisterHeader control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.requiredLastname">
+</member><member name="F:BigRedTicketExchange.BRTE.LoginHeader">
 	<summary>
-requiredLastname control.
+LoginHeader control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.password">
+</member><member name="F:BigRedTicketExchange.BRTE.WelcomeMessageHeader">
 	<summary>
-password control.
+WelcomeMessageHeader control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.confirmPassword">
+</member><member name="F:BigRedTicketExchange.BRTE.LogoutHeader">
 	<summary>
-confirmPassword control.
+LogoutHeader control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.email">
+</member><member name="F:BigRedTicketExchange.BRTE.LogoutAnchor">
 	<summary>
-email control.
+LogoutAnchor control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.requiredEmail">
+</member><member name="F:BigRedTicketExchange.BRTE.form1">
 	<summary>
-requiredEmail control.
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:BigRedTicketExchange.Register.nuid">
+</member><member name="F:BigRedTicketExchange.BRTE.ContentPlaceHolder1">
 	<summary>
-nuid control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.Register.requredNUID">
-	<summary>
-requredNUID control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.Register.phonenumber">
-	<summary>
-phonenumber control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.Register.registerButton">
-	<summary>
-registerButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.SendMessage.recipient">
-	<summary>
-recipient control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.SendMessage.subject">
-	<summary>
-subject control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.SendMessage.message">
-	<summary>
-message control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.SendMessage.Send">
-	<summary>
-Send control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:BigRedTicketExchange.SendMessage.Discard">
-	<summary>
-Discard control.
+ContentPlaceHolder1 control.
 </summary>
 	<remarks>
 Auto-generated field.

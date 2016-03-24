@@ -93,6 +93,7 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\npm.js" />
+    <Content Include="BuyTickets.aspx" />
     <Content Include="css\BRTE.css" />
     <Content Include="images\Banner - Copy.jpg" />
     <Content Include="images\Banner.PNG" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="BRTE.Master.vb">
       <DependentUpon>BRTE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuyTickets.aspx.designer.vb">
+      <DependentUpon>BuyTickets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuyTickets.aspx.vb">
+      <DependentUpon>BuyTickets.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.designer.vb">
