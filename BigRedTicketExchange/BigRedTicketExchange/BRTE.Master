@@ -30,7 +30,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="Home.aspx" class="navbar-brand">Big Red Ticket Exchange</a></li>
-                    <li><a href="Home.aspx" class="navbar-brand">Ticket Transfer Instructions</a></li>
+                    <li id="TicketTransferHeader" runat="server"><a href="TicketTransferInstructions.aspx" class="navbar-brand">Ticket Transfer Instructions</a></li>
                     <li id="MessageCenterHeader" runat="server"><a href="MessageCenter.aspx" class="navbar-brand">Messages</a></li>                    
                 </ul>
 
