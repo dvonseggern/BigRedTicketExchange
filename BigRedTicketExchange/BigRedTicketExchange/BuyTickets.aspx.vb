@@ -6,6 +6,7 @@
     End Sub
 
     Private Sub buyTicket_Click(sender As Object, e As EventArgs) Handles buyTicket.Click
+        Session.Add("MsgRecipient", SellerNameLabel.Text)
         Server.Transfer("SendMessage.aspx")
     End Sub
 End Class
