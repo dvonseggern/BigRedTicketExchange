@@ -5,8 +5,9 @@
     <div class="container">
     <div class="col-sm-12">
 		<h3>From: John</h3>
+        <h3>Subject: Basketball ticket vs Rutgers</h3>
         <p>
-            Hello, I would love to buy your ticket to the football game vs Wyoming, let me know if it is still available and how much money you would like for the ticket!
+            Hello, I would love to buy your ticket to the basketball game vs Rutgers, let me know if it is still available and how much money you would like for the ticket!
             <br />
             Thanks!
             <br />

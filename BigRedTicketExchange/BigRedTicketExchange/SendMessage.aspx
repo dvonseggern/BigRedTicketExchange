@@ -15,7 +15,7 @@
     <div class="form-group col-sm-12">
 		<label for="subject" class="col-sm-2 control-label">Subject:</label>
 		<div class="col-sm-4">
-			<asp:textbox runat="server" class="form-control" placeholder="Subject" name="subject" id="subject" TextMode="Search"></asp:textbox>
+			<asp:textbox runat="server" class="form-control" placeholder="Subject" name="subject" id="subject"></asp:textbox>
 		</div>
 	</div>
     <div class="form-group col-sm-12">

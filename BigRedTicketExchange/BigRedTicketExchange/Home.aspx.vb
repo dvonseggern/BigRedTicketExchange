@@ -32,4 +32,19 @@
         End If
     End Sub
 
+    Protected Sub rpt_ItemCommandBasketball(ByVal source As Object, ByVal e As System.Web.UI.WebControls.RepeaterCommandEventArgs) Handles BasketballSchedule.ItemCommand
+        If e.CommandName = "Buy" Then
+            ' Add code here to add the item to the shopping cart.
+            ' Use the value of e.Item.ItemIndex to retrieve the data 
+            ' item in the control.
+            Server.Transfer("BuyTickets.aspx")
+        End If
+        If e.CommandName = "Sell" Then
+            ' Add code here to add the item to the shopping cart.
+            ' Use the value of e.Item.ItemIndex to retrieve the data 
+            ' item in the control.
+            MsgBox("Ticket is posted for sale!")
+        End If
+    End Sub
+
 End Class
