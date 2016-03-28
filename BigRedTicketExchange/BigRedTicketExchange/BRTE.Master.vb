@@ -21,5 +21,6 @@
 
     Private Sub LogoutAnchor_ServerClick(sender As Object, e As EventArgs) Handles LogoutAnchor.ServerClick
         Session.RemoveAll()
+        Server.Transfer("Home.aspx")
     End Sub
 End Class

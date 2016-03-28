@@ -155,6 +155,33 @@ Public Class DBManager
 
     End Function
 
+
+    Public Function getUserByID(ByVal id As Integer) As User
+
+        Dim userList As List(Of User) = getFullUsersList()
+
+        For Each user As User In userList
+            If id = user.UserID Then
+                Return user
+            End If
+        Next
+
+
+    End Function
+
+    Public Function getUserByUsername(ByVal email As String) As User
+
+        Dim userList As List(Of User) = getFullUsersList()
+
+        For Each user As User In userList
+            If email = user.Email Then
+                Return user
+            End If
+        Next
+
+
+    End Function
+
     Public Function getFullUsersList() As List(Of User)
 
         Dim mySQLConn As MySqlConnection = ConnectToDB()
@@ -212,7 +239,7 @@ Public Class DBManager
 
             ' INSERT INTO `dvonsegg`.`User` (`UserID`, `FirstName`, `LastName`, `Email`, `NUID`, `PhoneNumber`, `Password`) VALUES ('1', 'Derek', 'Von Seggern', 'dvon@email.com', '12345678', '402-555-5555', '123');
 
-            Dim sqlCommand As String = String.Format("insert into dvonsegg.User ('FirstName', 'LastName', 'Email', 'NUID', 'PhoneNumber', 'Password') Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", user.FirstName, user.LastName, user.Email, user.NUID, user.PhoneNumber, user.Password)
+            Dim sqlCommand As String = String.Format("insert into dvonsegg.User (FirstName, LastName, Email, NUID, PhoneNumber, Password) Values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", user.FirstName, user.LastName, user.Email, user.NUID, user.PhoneNumber, user.Password)
 
             Dim cmd As New MySqlCommand(sqlCommand, mySQLConn)
             Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
@@ -232,4 +259,163 @@ Public Class DBManager
         Return usersList
 
     End Function
+
+    Public Function getSingleMessageById(ByVal id As Integer) As Message
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+        Dim message As New Message
+        Dim user As New User
+
+
+        Try
+
+            mySQLConn.Open()
+
+            Dim cmd As New MySqlCommand("select * from dvonsegg.Message WHERE MessageID=" & id, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Message")
+
+            For Each row As DataRow In ds.Tables("Message").Rows
+                message.SenderID = row.Item("SenderID")
+                message.ReceiverID = row.Item("ReceiverID")
+                message.MessageID = row.Item("MessageID")
+                message.Subject = row.Item("Subject")
+                message.Message = row.Item("Message")
+                message.DateSent = row.Item("DateSent")
+            Next
+
+            mySQLConn.Close()
+
+            user = getUserByID(message.SenderID)
+            message.SenderEmail = user.Email
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+        Return message
+
+    End Function
+
+    Public Function getMessagesByReceiverId(ByVal userId As Integer) As List(Of Message)
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+        Dim messageList As New List(Of Message)
+
+        Try
+
+            mySQLConn.Open()
+
+            Dim cmd As New MySqlCommand("select * from dvonsegg.Message WHERE ReceiverID=" & userId, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Message")
+
+            For Each row As DataRow In ds.Tables("Message").Rows
+                Dim message As New Message
+                message.SenderID = row.Item("SenderID")
+                message.ReceiverID = row.Item("ReceiverID")
+                message.MessageID = row.Item("MessageID")
+                message.Subject = row.Item("Subject")
+                message.Message = row.Item("Message")
+                message.DateSent = row.Item("DateSent")
+
+                messageList.Add(message)
+            Next
+
+            mySQLConn.Close()
+
+            For Each msg As Message In messageList
+                Dim user As New User
+                user = getUserByID(msg.SenderID)
+                msg.SenderEmail = user.Email
+            Next
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+        Return messageList
+
+    End Function
+
+    Public Sub addMessage(ByVal message As Message)
+
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+        Dim sender As New User
+        Dim receiver As New User
+        sender = getUserByUsername(message.SenderEmail)
+        receiver = getUserByUsername(message.ReceiverEmail)
+
+
+        Try
+
+            mySQLConn.Open()
+
+            ' INSERT INTO `dvonsegg`.`User` (`UserID`, `FirstName`, `LastName`, `Email`, `NUID`, `PhoneNumber`, `Password`) VALUES ('1', 'Derek', 'Von Seggern', 'dvon@email.com', '12345678', '402-555-5555', '123');
+
+            Dim sqlCommand As String = String.Format("insert into dvonsegg.Message (SenderID, ReceiverID, Subject, Message, DateSent) Values ('{0}', '{1}', '{2}', '{3}', '{4}')", sender.UserID, receiver.UserID, message.Subject, message.Message, message.DateSent.ToString("yyyy-MM-dd HH:mm:ss"))
+
+            Dim cmd As New MySqlCommand(sqlCommand, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Message")
+
+            mySQLConn.Close()
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+    End Sub
+
+    Public Sub deleteMessage(ByVal messageID As Integer)
+
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+
+
+        Try
+
+            mySQLConn.Open()
+
+            ' INSERT INTO `dvonsegg`.`User` (`UserID`, `FirstName`, `LastName`, `Email`, `NUID`, `PhoneNumber`, `Password`) VALUES ('1', 'Derek', 'Von Seggern', 'dvon@email.com', '12345678', '402-555-5555', '123');
+
+            Dim sqlCommand As String = String.Format("delete from dvonsegg.Message where MessageID = " & messageID)
+
+            Dim cmd As New MySqlCommand(sqlCommand, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Message")
+
+            mySQLConn.Close()
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+    End Sub
+
 End Class

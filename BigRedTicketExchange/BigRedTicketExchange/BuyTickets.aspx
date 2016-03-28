@@ -20,7 +20,7 @@
               </asp:TableHeaderRow>
               <asp:TableRow runat="server" CssClass="col-sm-12">
                                 <asp:TableCell id="SellerName" CssClass="col-sm-4">
-                                    <asp:Label runat="server" ID="SellerNameLabel" Text='Billy' />
+                                    <asp:Label runat="server" ID="SellerNameLabel" Text='billy@email.com' />
                                 </asp:TableCell>
                                 <asp:tablecell id="Comments" CssClass="col-sm-6">
                                     <asp:Label runat="server" ID="CommentLabel" Text='East Stadium' />

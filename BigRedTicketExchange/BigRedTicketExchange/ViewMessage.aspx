@@ -4,16 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
     <div class="col-sm-12">
-		<h3>From: John</h3>
-        <h3>Subject: Basketball ticket vs Rutgers</h3>
-        <p>
-            Hello, I would love to buy your ticket to the basketball game vs Rutgers, let me know if it is still available and how much money you would like for the ticket!
-            <br />
-            Thanks!
-            <br />
-            John
-            <br />
-        </p>
+		<h4>From: <%= getMessage().SenderEmail%></h4>
+        <h4>Subject: <%= getMessage().Subject%></h4>
+        <h4>Date: <%= getMessage().DateSent%></h4>
+        <p><%= getMessage().Message%></p>
 	</div>
     <div class="col-sm-12">
         <asp:button class="btn btn-default" runat="server" id="Reply" Text="Reply"></asp:button>

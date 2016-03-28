@@ -34,3 +34,14 @@ Public Class User
     Public Property Password As String
     Public Property IsSeller As Boolean
 End Class
+
+Public Class Message
+    Public Property MessageID As Integer
+    Public Property SenderID As Integer
+    Public Property ReceiverID As Integer
+    Public Property SenderEmail As String
+    Public Property ReceiverEmail As String
+    Public Property Subject As String
+    Public Property Message As String
+    Public Property DateSent As DateTime
+End Class
