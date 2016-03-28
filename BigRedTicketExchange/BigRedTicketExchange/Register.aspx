@@ -21,7 +21,7 @@
             <div class="form-group col-sm-12">
 				<label class="col-sm-2 control-label">Last Name</label>
 				<div class="col-sm-6">
-					<asp:textbox runat="server" class="form-control" placeholder="Smith" name="lastname" id="lastname"></asp:textbox>
+					<asp:textbox runat="server" class="form-control" placeholder="Last Name" name="lastname" id="lastname"></asp:textbox>
                     <asp:RequiredFieldValidator id="requiredLastname" runat="server"
   ControlToValidate="lastname"
   ErrorMessage="Last name is a required field."
@@ -57,7 +57,7 @@
 			<div class="form-group col-sm-12">
 				<label class="col-sm-2 control-label">NUID</label>
 				<div class="col-sm-6">
-					<asp:textbox runat="server" class="form-control" placeholder="12345678" name="nuid" id="nuid"></asp:textbox>
+					<asp:textbox runat="server" class="form-control" placeholder="00000000" name="nuid" id="nuid"></asp:textbox>
                     <asp:RequiredFieldValidator id="requredNUID" runat="server"
   ControlToValidate="nuid"
   ErrorMessage="NUID is a required field."
@@ -74,55 +74,11 @@
 			</div>
 			<div class="form-group col-sm-12">
 				<div class="col-sm-offset-2 col-sm-10">
-					<asp:button runat="server" class="btn btn-default disabled" id="registerButton" Text="Register"></asp:button>
+					<asp:button runat="server" class="btn btn-default" id="registerButton" Text="Register"></asp:button>
 				</div>
 			</div>
 	</div>
 
 
-	<script>
-		var usernameValid = false;
-		var passwordValid = false;
-		$('#username').on('keyup click', function() {
-			if ($('#username').val().length != 0) {
-				$('#usernamegroup').removeClass("has-error");
-				$('#usernamegroup').addClass("has-success");
-				usernameValid = true;
-			} else {
-				$('#usernamegroup').removeClass("has-success");
-				$('#usernamegroup').addClass("has-error");
-				usernameValid = false;
-			}
-		});
-		$('#password,#confirmPassword').on(
-				'keyup click',
-				function() {
-					if ($('#password').val().length != 0
-							&& $('#confirmPassword').val().length != 0
-							&& $('#password').val() == $('#confirmPassword')
-									.val()) {
-						$('#passwordgroup1,#passwordgroup2').addClass(
-								"has-success");
-						$('#passwordgroup1,#passwordgroup2').removeClass(
-								"has-error");
-						$('#registerButton').removeClass("disabled");
-						passwordValid = true;
-					} else {
-						$('#passwordgroup1,#passwordgroup2').addClass(
-								"has-error");
-						$('#passwordgroup1,#passwordgroup2').removeClass(
-								"has-success");
-						$('#registerButton').addClass("disabled");
-						passwordValid = false;
-					}
-				});
 
-		$('#registerform').on('keyup keypress', function(e) {
-			var keyCode = e.keyCode || e.which;
-			if (keyCode === 13 && (!usernameValid || !passwordValid)) {
-				e.preventDefault();
-				return false;
-			}
-		});
-	</script>
 </asp:Content>

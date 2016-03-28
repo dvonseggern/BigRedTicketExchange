@@ -25,4 +25,3 @@ C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\D
 C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.dll
 C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.xml
 C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.pdb
-C:\Users\Bryan\Documents\CSCE378\BigRedTicketExchange\BigRedTicketExchange\obj\Debug\BigRedTicketExchange.vbprojResolveAssemblyReference.cache

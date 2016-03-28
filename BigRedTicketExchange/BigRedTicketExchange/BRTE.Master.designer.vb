@@ -23,6 +23,15 @@ Partial Public Class BRTE
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''TicketTransferHeader control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TicketTransferHeader As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''MessageCenterHeader control.
     '''</summary>
     '''<remarks>
