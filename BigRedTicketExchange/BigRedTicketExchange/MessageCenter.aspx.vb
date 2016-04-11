@@ -5,6 +5,10 @@
         Dim dbManager As New DBManager
         Dim user As User = Session.Contents("LoggedInUser")
 
+        If IsNothing(user) Then
+            Server.Transfer("Login.aspx")
+        End If
+
         UserMessages.DataSource = dbManager.getMessagesByReceiverId(user.UserID)
         UserMessages.DataBind()
     End Sub

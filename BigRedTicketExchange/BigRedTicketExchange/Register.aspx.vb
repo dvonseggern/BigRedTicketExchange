@@ -14,13 +14,13 @@
         newUser.Password = password.Text
         newUser.Email = email.Text
         newUser.NUID = nuid.Text
-        If String.IsNullOrEmpty(phonenumber.Text) Then
+        If Not String.IsNullOrEmpty(phonenumber.Text) Then
             newUser.PhoneNumber = phonenumber.Text
         End If
 
         db.addUser(newUser)
 
-        Session.Add("LoggedInUser", User)
+        Session.Add("LoggedInUser", newUser)
 
         Server.Transfer("Home.aspx")
     End Sub

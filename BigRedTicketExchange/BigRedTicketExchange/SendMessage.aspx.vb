@@ -16,10 +16,17 @@
     End Sub
 
     Private Sub Send_ServerClick(sender As Object, e As EventArgs) Handles Send.Click
+        Dim send As New User
+        send = Session("LoggedInUser")
+
+        If IsNothing(send) Then
+            Server.Transfer("Login.aspx")
+        End If
+
         Dim db As New DBManager
         Dim mess As New Message
         Dim receiver As New User
-        Dim send As New User
+        ' Dim send As New User
         send = Session("LoggedInUser")
         receiver = db.getUserByUsername(recipient.Text)
         mess.SenderID = send.UserID
@@ -28,7 +35,7 @@
         mess.ReceiverEmail = receiver.Email
         mess.Subject = subject.Text
         mess.Message = message.Text
-        mess.DateSent = now
+        mess.DateSent = Now
         db.addMessage(mess)
         MsgBox("Message has been sent!")
         Server.Transfer("MessageCenter.aspx")
