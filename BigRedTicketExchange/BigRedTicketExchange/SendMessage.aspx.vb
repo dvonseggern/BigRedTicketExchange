@@ -12,7 +12,7 @@
                 Session.Remove("MsgRecipient")
             End If
         Else
-            recipient.Text = db.getUserByID(message.SenderID).FirstName & " " & db.getUserByID(message.SenderID).LastName
+            recipient.Text = u.FirstName & " " & u.LastName
             subject.Text = message.Subject
             Session.Remove("Message")
         End If
@@ -29,8 +29,6 @@
         Dim db As New DBManager
         Dim mess As New Message
         Dim receiver As New User
-        ' Dim send As New User
-        send = Session("LoggedInUser")
         receiver = db.getUserByUsername(recipient.Text)
         mess.SenderID = send.UserID
         mess.SenderEmail = send.Email
