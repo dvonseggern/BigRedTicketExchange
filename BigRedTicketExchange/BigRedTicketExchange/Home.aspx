@@ -25,30 +25,26 @@
 
                         <asp:Repeater runat="server" ID="FootballSchedule">
                             <ItemTemplate>
-                                <td id="OpponentFootball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateFootball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellFootball">
-                                    <asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
+                                <asp:HiddenField runat="server" ID="GameID" Value='<%# Eval("GameID")%>' />
                             </ItemTemplate>
                             <AlternatingItemTemplate>
-                                <td id="OpponentFootball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateFootball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellFootball">
-                                    <asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyFootball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellFootball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
+                                <asp:HiddenField runat="server" ID="GameID" Value='<%# Eval("GameID")%>' />
                             </AlternatingItemTemplate>
                         </asp:Repeater>
 
@@ -60,30 +56,24 @@
                     <div id="bsched" style="display: none;">
                         <asp:Repeater runat="server" ID="BasketballSchedule">
                             <ItemTemplate>
-                                <td id="OpponentBasketball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateBasketball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellBasketball">
-                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
                             </ItemTemplate>
                             <AlternatingItemTemplate>
-                                <td id="OpponentBasketball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateBasketball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellBasketball">
-                                    <asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyBasketball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellBasketball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
                             </AlternatingItemTemplate>
                         </asp:Repeater>
                     </div>
@@ -94,30 +84,24 @@
                     <div id="vsched" style="display: none;">
                         <asp:Repeater runat="server" ID="VolleyballSchedule">
                             <ItemTemplate>
-                                <td id="OpponentVolleyball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateVolleyball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellVolleyball">
-                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
                             </ItemTemplate>
                             <AlternatingItemTemplate>
-                                <td id="OpponentVolleyball">
-                                    <asp:Label runat="server" ID="Opponent" Text='<%# Eval("Opponent") %>' />
-                                </td>
-                                <td id="DateVolleyball">
-                                    <asp:Label runat="server" ID="GameDate" Text='<%# Eval("GameDate") %>' />
-
-                                </td>
-                                <td id="BuySellVolleyball">
-                                    <asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button>
-                                    <asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button>
-                                </td>
+                                <asp:Table runat="server" CellPadding="3" CellSpacing="1">
+                                    <asp:TableRow runat="server">
+                                        <asp:TableCell Width="30%"><%# Eval("Opponent")%></asp:TableCell>
+                                        <asp:TableCell Width="50%"><%# Eval("GameDate")%></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="buyVolleyball" Text="Buy" CommandName="Buy" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
+                                        <asp:TableCell Width="10%"><asp:Button runat="server" ID="sellVolleyball" Text="Sell" CommandName="Sell" UseSubmitBehavior="false"></asp:Button></asp:TableCell>
+                                    </asp:TableRow>
+                                 </asp:Table>
                             </AlternatingItemTemplate>
                         </asp:Repeater>
                     </div>

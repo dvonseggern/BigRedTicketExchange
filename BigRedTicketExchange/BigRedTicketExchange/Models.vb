@@ -22,6 +22,15 @@ Public Class Ticket
     Public Property UserID As Integer
     Public Property IsAvailable As Boolean
     Public Property Visible As Boolean
+    Public Property Comments As String
+    Public Property User As User
+    Public Property UserName As String
+    Public Property UserEmail As String
+    Public Function getUser() As User
+        Dim dbManager As New DBManager
+        Dim u As User = dbManager.getUserByID(Me.UserID)
+        Return u
+    End Function
 End Class
 
 Public Class User

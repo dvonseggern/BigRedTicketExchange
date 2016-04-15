@@ -14,83 +14,11 @@ Option Explicit On
 Partial Public Class BuyTickets
 
     '''<summary>
-    '''sellerNameHeader control.
+    '''GameTickets control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents sellerNameHeader As Global.System.Web.UI.WebControls.TableHeaderCell
-
-    '''<summary>
-    '''commentsHeader control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents commentsHeader As Global.System.Web.UI.WebControls.TableHeaderCell
-
-    '''<summary>
-    '''MessageHeader control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents MessageHeader As Global.System.Web.UI.WebControls.TableHeaderCell
-
-    '''<summary>
-    '''SellerName control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SellerName As Global.System.Web.UI.WebControls.TableCell
-
-    '''<summary>
-    '''SellerNameLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SellerNameLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Comments control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Comments As Global.System.Web.UI.WebControls.TableCell
-
-    '''<summary>
-    '''CommentLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents CommentLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''MessageCell control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents MessageCell As Global.System.Web.UI.WebControls.TableCell
-
-    '''<summary>
-    '''buyTicket control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents buyTicket As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents GameTickets As Global.System.Web.UI.WebControls.Repeater
 End Class

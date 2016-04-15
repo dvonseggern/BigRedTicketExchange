@@ -2,16 +2,19 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Dim db As New DBManager
         Dim message As New Message
+        Dim u As User = Session("Sender")
         message = Session("Message")
         If IsNothing(message) Then
-
+            If Not IsNothing(Session("MsgRecipient")) Then
+                recipient.Text = u.FirstName & " " & u.LastName
+                Session.Remove("MsgRecipient")
+            End If
         Else
-            recipient.Text = message.SenderEmail
+            recipient.Text = db.getUserByID(message.SenderID).FirstName & " " & db.getUserByID(message.SenderID).LastName
             subject.Text = message.Subject
-        End If
-        If Not IsNothing(Session("MsgRecipient")) Then
-            recipient.Text = Session("MsgRecipient")
+            Session.Remove("Message")
         End If
     End Sub
 

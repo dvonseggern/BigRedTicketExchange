@@ -4,10 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
     <div class="col-sm-12">
-		<h4>From: <%= getMessage().SenderEmail%></h4>
-        <h4>Subject: <%= getMessage().Subject%></h4>
-        <h4>Date: <%= getMessage().DateSent%></h4>
-        <p><%= getMessage().Message%></p>
+		<h4 runat="server" id="SenderName"></h4>
+        <h4 runat="server" id="Subject"></h4>
+        <h4 runat="server" id="DateSent"></h4>
+        <p runat="server" id="Message"></p>
 	</div>
     <div class="col-sm-12">
         <asp:button class="btn btn-default" runat="server" id="Reply" Text="Reply"></asp:button>
