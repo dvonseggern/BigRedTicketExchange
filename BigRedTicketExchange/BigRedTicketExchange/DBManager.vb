@@ -462,4 +462,39 @@ Public Class DBManager
 
     End Sub
 
+    Public Function addTicket(ByVal ticket As Ticket)
+
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+        Dim usersList As New List(Of User)
+
+
+        Try
+
+            mySQLConn.Open()
+
+            ' INSERT INTO `dvonsegg`.`User` (`UserID`, `FirstName`, `LastName`, `Email`, `NUID`, `PhoneNumber`, `Password`) VALUES ('1', 'Derek', 'Von Seggern', 'dvon@email.com', '12345678', '402-555-5555', '123');
+
+            Dim sqlCommand As String = String.Format("insert into dvonsegg.Tickets (GameID, UserID, IsAvailable, Visible, Comments) Values ('{0}', '{1}', '{2}', '{3}', '{4}')", ticket.GameID, ticket.UserID, ticket.IsAvailable, ticket.Visible, ticket.Comments)
+
+            Dim cmd As New MySqlCommand(sqlCommand, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Tickets")
+
+            mySQLConn.Close()
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+        Return usersList
+
+    End Function
+
 End Class
