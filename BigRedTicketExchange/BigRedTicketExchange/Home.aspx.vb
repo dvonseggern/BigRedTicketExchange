@@ -22,7 +22,9 @@
             ' Add code here to add the item to the shopping cart.
             ' Use the value of e.Item.ItemIndex to retrieve the data 
             ' item in the control.
-            Server.Transfer("BuyTickets.aspx")
+            Dim control As HiddenField = e.Item.FindControl("GameID")
+            Session.Add("GameID", control.Value)
+            Response.Redirect("BuyTickets.aspx")
         End If
         If e.CommandName = "Sell" Then
             ' Add code here to add the item to the shopping cart.
@@ -37,7 +39,7 @@
             ' Add code here to add the item to the shopping cart.
             ' Use the value of e.Item.ItemIndex to retrieve the data 
             ' item in the control.
-            Server.Transfer("BuyTickets.aspx")
+            Response.Redirect("BuyTickets.aspx")
         End If
         If e.CommandName = "Sell" Then
             ' Add code here to add the item to the shopping cart.

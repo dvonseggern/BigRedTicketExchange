@@ -288,8 +288,7 @@ Public Class DBManager
 
             mySQLConn.Close()
 
-            user = getUserByID(message.SenderID)
-            message.SenderEmail = user.Email
+            
 
         Catch myerror As MySqlException
 
@@ -347,6 +346,51 @@ Public Class DBManager
         End Try
 
         Return messageList
+
+    End Function
+
+    Public Function getTicketsByGameID(ByVal gameId As Integer) As List(Of Ticket)
+
+        Dim mySQLConn As MySqlConnection = ConnectToDB()
+        Dim ds As New DataSet
+        Dim ticketList As New List(Of Ticket)
+
+
+        Try
+
+            mySQLConn.Open()
+
+            Dim cmd As New MySqlCommand("select * from dvonsegg.Tickets WHERE GameID=" & gameId, mySQLConn)
+            Dim da As MySqlDataAdapter = New MySqlDataAdapter(cmd)
+
+            da.Fill(ds, "Tickets")
+
+            For Each row As DataRow In ds.Tables("Tickets").Rows
+                Dim ticket As New Ticket
+                ticket.GameID = row.Item("GameID")
+                ticket.TicketID = row.Item("TicketID")
+                ticket.UserID = row.Item("UserID")
+                ticket.IsAvailable = row.Item("IsAvailable")
+                ticket.Visible = row.Item("Visible")
+                ticket.Comments = row.Item("Comments")
+                ticket.User = ticket.getUser()
+                ticket.UserName = ticket.User.FirstName & " " & ticket.User.LastName
+                ticket.UserEmail = ticket.User.Email
+
+                ticketList.Add(ticket)
+            Next
+
+            mySQLConn.Close()
+
+        Catch myerror As MySqlException
+
+        Finally
+
+            mySQLConn.Dispose()
+
+        End Try
+
+        Return ticketList
 
     End Function
 
