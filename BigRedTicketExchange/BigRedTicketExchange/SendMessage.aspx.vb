@@ -7,14 +7,16 @@
         Dim u As User = Session("Sender")
         message = Session("Message")
         If IsNothing(message) Then
-            If Not IsNothing(Session("MsgRecipient")) Then
-                recipient.Text = u.FirstName & " " & u.LastName
-                Session.Remove("MsgRecipient")
-            End If
-        Else
+            'If Not IsNothing(Session("MsgRecipient")) Then
             recipient.Text = u.FirstName & " " & u.LastName
-            subject.Text = message.Subject
+            Session.Remove("MsgRecipient")
+            userEmail.Value = u.Email
+            'End If
+        Else
+        recipient.Text = u.FirstName & " " & u.LastName
+        subject.Text = message.Subject
             Session.Remove("Message")
+            userEmail.Value = u.Email
         End If
     End Sub
 
@@ -29,7 +31,7 @@
         Dim db As New DBManager
         Dim mess As New Message
         Dim receiver As New User
-        receiver = db.getUserByUsername(recipient.Text)
+        receiver = db.getUserByUsername(userEmail.Value)
         mess.SenderID = send.UserID
         mess.SenderEmail = send.Email
         mess.ReceiverID = receiver.UserID

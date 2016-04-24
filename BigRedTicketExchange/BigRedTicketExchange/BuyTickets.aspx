@@ -21,7 +21,7 @@
                             <asp:Table runat="server" Width="1100" CellPadding="3" CellSpacing="1" BorderWidth="2">
                                 <asp:TableRow runat="server">
                                     <asp:TableCell Width="30%"><%# Eval("UserName")%></asp:TableCell>
-                                    <asp:TableCell Width="20%"><%# Eval("UserEmail")%>></asp:TableCell>
+                                    <asp:TableCell Width="20%"><%# Eval("UserEmail")%></asp:TableCell>
                                     <asp:TableCell Width="40%"><%# Eval("Comments")%></asp:TableCell>
                                     <asp:TableCell Width="10%"><asp:Button runat="server" ID="Message" Text="Message" CommandName="Message" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
                                 </asp:TableRow>
@@ -34,7 +34,7 @@
                             <asp:Table runat="server" Width="1100" CellPadding="3" CellSpacing="1" BorderWidth="2">
                                 <asp:TableRow runat="server">
                                     <asp:TableCell Width="30%"><%# Eval("UserName")%></asp:TableCell>
-                                    <asp:TableCell Width="20%"><%# Eval("UserEmail")%>></asp:TableCell>
+                                    <asp:TableCell Width="20%"><%# Eval("UserEmail")%></asp:TableCell>
                                     <asp:TableCell Width="40%"><%# Eval("Comments")%></asp:TableCell>
                                     <asp:TableCell Width="10%"><asp:Button runat="server" ID="Message" Text="Message" CommandName="Message" UseSubmitBehavior="False"></asp:Button></asp:TableCell>
                                 </asp:TableRow>

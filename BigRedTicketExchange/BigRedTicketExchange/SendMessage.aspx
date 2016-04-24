@@ -28,5 +28,6 @@
         <asp:button class="btn btn-default" runat="server" id="Send" Text="Send"></asp:button>
         <asp:button class="btn btn-default" runat="server" id="Discard" Text="Discard"></asp:button>
     </div>
+       <asp:HiddenField ID="userEmail" runat="server" />
 </div>
 </asp:Content>

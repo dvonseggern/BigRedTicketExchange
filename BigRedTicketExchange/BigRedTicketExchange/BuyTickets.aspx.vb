@@ -14,7 +14,10 @@
             ' Use the value of e.Item.ItemIndex to retrieve the data 
             ' item in the control.
             Dim control As HiddenField = e.Item.FindControl("UserID")
-            Session.Add("MsgRecipient", control.Value)
+            'Session.Add("MsgRecipient", control.Value)
+            Dim db As New DBManager
+            Dim sender As User = db.getUserByID(control.Value)
+            Session.Add("Sender", sender)
             Session.Remove("GameID")
             Response.Redirect("SendMessage.aspx")
         End If
