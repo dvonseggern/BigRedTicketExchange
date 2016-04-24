@@ -20,6 +20,8 @@
 
         db.addUser(newUser)
 
+        newUser = db.getUserByUsername(newUser.Email)
+
         Session.Add("LoggedInUser", newUser)
 
         Server.Transfer("Home.aspx")
